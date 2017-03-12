@@ -1,4 +1,4 @@
-var mongoose = require('mongoose');
+// var mongoose = require('mongoose');
 
 var uristring = 'mongodb://gbest:goodlandingpage@ds129050.mlab.com:29050/heroku_0t3tqm9c';
 
@@ -43,7 +43,8 @@ var pex = new Employer({
 
 module.exports = {
 	candidate: Candidate,
-	employer: Employer
+	employer: Employer,
+	uri: uristring
 }
 
 pex.save(function (err) {if (err) console.log ('Error on save!')});
